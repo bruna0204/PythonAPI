@@ -57,13 +57,6 @@ def presente_futuro(data):
                      "diferenca_ano": diferenca_ano})
 
 
-@app.route('/dias_de_diferenca/<data>')
-def difere(data):
-    data_informada = datetime.datetime.strptime(data,'%d-%m-%Y')
-    tempo_atual = datetime.datetime.now()
-    diferenca_data = (tempo_atual - data_informada).days
-    return jsonify({"dias_difereca": diferenca_data})
-
 
 
 if __name__ == '__main__':
