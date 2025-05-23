@@ -13,7 +13,7 @@ spec.register(app)
 def index():
     return 'Hello World!'
 
-@app.route('/datas/<data>', methods=['GET'])
+@app.route('/datas/<data>', 'methods=['GET']')
 def presente_futuro(data):
     # Converter a string da data para formato datetime
     """
